@@ -21,7 +21,7 @@ const HomeScreen = ({navigation}) => {
 
 
   return (
-      <SafeAreaView>
+      <SafeAreaView style={{ flex: 1, backgroundColor: 'white' }}>
     <ScrollView >
       
         <View style={styles.top}>
@@ -254,13 +254,14 @@ const styles = StyleSheet.create({
    
 },
     tcard:{
-    backgroundColor:'white',
+    backgroundColor:'#D3D3D9',
     width:'48%',
     height:sh*.14,
     borderRadius:10,
     justifyContent:'center',
     alignItems:'center',
-    marginBottom:'6%'
+    marginBottom:'6%',
+      elevation: 4,
     },
 
     tf:{
