@@ -15,7 +15,7 @@ const FundWalletModal = ({showModal,hideModal}) => {
    // style={{backgroundColor:'red'}}
     >
 
-    <TouchableOpacity>
+    {/* <TouchableOpacity>
 
     <View style={{flexDirection:'row',alignItems:'center',alignContent:'flex-start', marginBottom:'4%'}}>
 
@@ -24,7 +24,7 @@ const FundWalletModal = ({showModal,hideModal}) => {
 
 </View>
 
-    </TouchableOpacity>
+    </TouchableOpacity> */}
       
 
 
