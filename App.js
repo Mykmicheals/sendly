@@ -11,6 +11,7 @@ import { FontAwesome } from '@expo/vector-icons';
 import Login from './src/screens/Login';
 import SettingsScreen from './src/screens/SettingsScreen';
 import HomeScreen from './src/screens/HomeScreen';
+import LoginScreen from './src/screens/LoginScreen';
 //import './tailwind.css'
 
 const Tab = createBottomTabNavigator();
@@ -70,7 +71,7 @@ export default function App() {
       headerShown: false,
       cardStyle: { backgroundColor: 'white' },
     }}>
-      {/* <Stack.Screen name="login" component={Login} /> */}
+      <Stack.Screen name="login" component={LoginScreen} />
     <Stack.Screen name="tabs" component={MyTabs} />
     <Stack.Screen name="settings" component={SettingsScreen} />
     
