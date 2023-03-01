@@ -72,14 +72,14 @@ const styles = StyleSheet.create({
     paddingLeft: 5,
   },
   forgot: {
-    color: '#fb5b5a',
+    color: '#346D27',
     fontSize: 12,
     marginBottom: 20,
   },
   button: {
     width: '80%',
     height: 50,
-    backgroundColor: '#fb5b5a',
+    backgroundColor: '#437939',
     borderRadius: 25,
     alignItems: 'center',
     justifyContent: 'center',
