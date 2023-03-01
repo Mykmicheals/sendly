@@ -1,14 +1,14 @@
 import React, { useState } from 'react';
-import { View, Text, TextInput, StyleSheet } from 'react-native';
+import { View, Text, TextInput, StyleSheet, TouchableOpacity } from 'react-native';
 import { Feather } from '@expo/vector-icons';
 
-const LoginScreen = () => {
+const LoginScreen = ({navigation}) => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
   return (
     <View style={styles.container}>
-      <Text style={styles.logo}>My App</Text>
+      <Text style={styles.logo}>SENDLY</Text>
       <View style={styles.inputView}>
         <Feather name="mail" size={24} color="gray" style={styles.icon} />
         <TextInput
@@ -31,9 +31,9 @@ const LoginScreen = () => {
         />
       </View>
       <Text style={styles.forgot}>Forgot Password?</Text>
-      <View style={styles.button}>
+      <TouchableOpacity onPress={()=>navigation.navigate('tabs')} style={styles.button}>
         <Text style={styles.loginText}>LOGIN</Text>
-      </View>
+      </TouchableOpacity>
       <Text style={styles.signup}>Don't have an account? Sign up</Text>
     </View>
   );
