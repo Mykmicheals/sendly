@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
-import { View, Text, TextInput, StyleSheet, TouchableOpacity } from 'react-native';
+import { View, Text, TextInput, StyleSheet, TouchableOpacity,Image } from 'react-native';
 import { Feather } from '@expo/vector-icons';
+import sendly from '../../assets/sendly.png'
 
 const LoginScreen = ({navigation}) => {
   const [email, setEmail] = useState('');
@@ -8,7 +9,12 @@ const LoginScreen = ({navigation}) => {
 
   return (
     <View style={styles.container}>
-      <Text style={styles.logo}>SENDLY</Text>
+    
+  <View style={{ alignItems:'center',
+        justifyContent:'center', marginBottom:'30%' }}>
+       <Image source={sendly}/>  
+  </View>
+
       <View style={styles.inputView}>
         <Feather name="mail" size={24} color="gray" style={styles.icon} />
         <TextInput
@@ -46,17 +52,12 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
-  logo: {
-    fontWeight: 'bold',
-    fontSize: 50,
-    color: '#fb5b5a',
-    marginBottom: 40,
-  },
+
   inputView: {
     flexDirection: 'row',
     alignItems: 'center',
     width: '80%',
-    height: 50,
+     height: 50,
     marginBottom: 20,
     borderBottomWidth: 1,
     borderBottomColor: 'gray',
