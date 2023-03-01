@@ -21,7 +21,9 @@ const HomeScreen = ({navigation}) => {
 
 
   return (
-    <SafeAreaView >
+      <SafeAreaView>
+    <ScrollView >
+      
         <View style={styles.top}>
          <Text style={styles.logo}>Sendly</Text>
         <View style={styles.img}>
@@ -138,8 +140,9 @@ const HomeScreen = ({navigation}) => {
         showModal={fundWallet}
      hideModal={()=>setWallet(false)}
         />
-    
-    </SafeAreaView>
+   
+    </ScrollView>
+     </SafeAreaView>
   )
 }
 
